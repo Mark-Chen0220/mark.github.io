@@ -246,14 +246,25 @@ footer {
         font-size: 1rem;
     }
 
+    #personal-info img {
+        float: none; /* Remove the float on small screens */
+        display: block; /* Ensure it behaves as a block element */
+        margin: 0 auto 1rem auto; /* Center the image and add bottom margin */
+        width: 100px; /* Optionally adjust the size for smaller screens */
+    }
+
+    #personal-info div {
+        text-align: center; /* Center the text below the image */
+    }
+
     .carousel {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
     }
 
     .carousel-item img {
         width: 200px;
-        height: 133px;
+        height: 267px;
     }
 
     .image-grid {
@@ -262,7 +273,7 @@ footer {
     }
 
     .image-grid img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
