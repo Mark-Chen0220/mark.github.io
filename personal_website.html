@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網頁</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>歡迎來到陳彥宇的個人網頁</h1>
+    </header>
+
+    <!-- Navigator -->
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-menu">
+            <li><a href="#personal-info">基本資料</a></li>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#static-images">榮譽</a></li>
+            <li><a href="#image-carousel">Cosplay照片</a></li>
+            <li><a href="#contact">聯繫我</a></li>
+            <li><a href="#social">社群媒體</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <section id="personal-info">
+            <h2>基本資料</h2>
+            <div>
+                <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/%E5%A4%A7%E9%A0%AD%E7%85%A7.jpg?raw=true" alt="大頭照" width=150px style="float: left; margin-right: 70px;">
+                <p>姓名：陳彥宇</p>
+                <p>學號：111511076</p>
+                <p>生日：2004/02/20</p>
+                <p>血型：AB</p>
+                <p>星座：雙魚</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>關於我</h2>
+            <p>嗨！我叫陳彥宇，目前是陽明交通大學電機工程系的大三學生。我曾修習過人工智慧相關課程，現在正在溫宏斌教授的指導下準備參加一場 AI 競賽。此外，本學期我也正再向廖育德教授學習，進行類比 IC 相關的專題。
+
+            我的專長與熱情在於語言學習。我在國三時考取了 TOEIC 滿分 990 分，並在 TOEFL ITP 考試中獲得 657/677 的高分，因此免修校內英文課程，並獲得 6 學分的榮譽學分。目前，我正在學習日語，未來若達到流利程度，或許會挑戰學習另一種新語言！
+                
+            課餘時間，我喜歡觀看動畫和 Vtuber 直播，也熱衷於 Cosplay。參加各種展會，不僅能欣賞大家精心準備的華麗服裝，還能與同好交流，讓這項興趣變得更加有趣！此外，我也喜歡烘焙，為他人製作甜點讓我感到快樂。我樂於嘗試新的食譜，享受從備料到完成的每個步驟，並期待與家人朋友分享美味的成果。
+            </p>
+        </section>
+        <section id="static-images">
+            <h2>榮譽</h2>
+            <div class="image-grid">
+                <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/TOEFL%20ITP%20657_20220529.jpg?raw=true" alt="TOEFL">
+                <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/TOEIC%20990_20190526.jpg?raw=true" alt="TOEIC">
+                <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/PicWithMayor.jpg?raw=true" alt="Mayor">
+            </div>
+        </section>
+        <section id="image-carousel">
+            <h2>Cosplay照片</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn left" aria-label="Previous">❮</button>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/FBK_BlueJourney.jpg?raw=true" alt="白上吹雪BlueJourney">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/Towa_BlueJourney.jpg?raw=true" alt="常闇永遠BlueJourney">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/86_1.jpg?raw=true" alt="Lena-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/86_2.jpg?raw=true" alt="Lena-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/FBK_Dress_1.jpg?raw=true" alt="白上吹雪-禮服1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://github.com/Mark-Chen0220/ImageForWebsite/blob/main/Nekota.jpg?raw=true" alt="貓田">
+                    </div>
+                </div>
+                <button class="carousel-btn right" aria-label="Next">❯</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>聯繫我</h2>
+            <p>Email: 93markchen@gmail.com</p>
+            <p>Phone: 0989-871-585</p>
+        </section>
+        <section id="social">
+            <h2>社群媒體</h2>
+
+            <div class="image-container">
+                <a href="https://www.instagram.com/mark930220/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="我的Instagram" class="social-img">
+                </a>
+                <a href="https://www.facebook.com/MarkEECos/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1024px-Facebook_f_logo_%282021%29.svg.png" alt="我的Facebook" class="social-img">
+                </a>
+                <a href="https://x.com/markEEcos" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/500px-X_logo.jpg" alt="我的Twitter" class="social-img">
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 YEN-YU CHEN. 版權所有。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

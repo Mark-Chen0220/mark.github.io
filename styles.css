@@ -1,0 +1,268 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define color variables */
+:root {
+    --persian-pink: #EC86C0ff;
+    --mindaro: #EAFE71ff;
+    --jet: #32313Aff;
+    --amethyst: #8366ACff;
+    --lavender-pink: #F7A5D8ff;
+}
+
+/* Body styling */
+body {
+    font-family: "Microsoft JhengHei", "Arial", "Helvetica", sans-serif;
+    line-height: 1.6;
+    background-color: var(--lavender-pink);
+    color: var(--jet);
+}
+
+/* Header styling */
+header {
+    background-color: var(--persian-pink);
+    color: var(--jet);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigator styling */
+nav {
+    background-color: var(--amethyst);
+    padding: 1rem;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--mindaro);
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--mindaro);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: var(--persian-pink);
+    color: var(--jet);
+    border-radius: 5px;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: var(--amethyst);
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Carousel styling */
+#image-carousel {
+    margin-top: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid var(--persian-pink);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel button styling */
+.carousel-btn {
+    background-color: var(--amethyst);
+    color: var(--mindaro);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: var(--persian-pink);
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+/* Static Images styling */
+#static-images {
+    margin-top: 2rem;
+    padding-bottom: 2rem; /* Add space before footer */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--persian-pink);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* Slight pop-out effect on hover */
+}
+
+/* Clickable image styling */
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Spacing between images, adjust this value */
+    margin-bottom: 1rem; /* Space below the images */
+}
+
+.social-img {
+    width: 75px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 3px solid var(--amethyst); /* Purple border */
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.social-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    opacity: 0.9; /* Slight fade */
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--jet);
+    color: var(--mindaro);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Show toggle button on mobile */
+    }
+
+    .nav-menu {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show when toggled */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .carousel {
+        width: 300px;
+        height: 200px;
+    }
+
+    .carousel-item img {
+        width: 200px;
+        height: 133px;
+    }
+
+    .image-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid img {
+        width: 150px;
+        height: 150px;
+    }
+}
